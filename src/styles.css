@@ -1,1 +1,69 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+:root {
+    --green: #27ae60;
+    --bg-color: #e6e6e6;
+    --border: .1rem solid rgba(0, 0, 0, .2);
+    --box-shadow: .4rem .4rem 1rem rgb(105, 100, 100), -.4rem -.4rem 1rem rgb(212, 204, 204);
+    --box-shadow-inset: .4rem .4rem 1rem #ccc inset, -.4rem -.4rem 1rem #fff inset;
+    --green: #16a085;
+    --black: #000000;
+    --white: #fff;
+    --light-color: rgb(65, 51, 51);
+    --wc-green: #7ad03a;
+    --wc-light-blue: #0a0a83;
+    --wc-blue: #2ea2cc;
+    --wc-primary-text: #fff;
+    --text-shadow: .4rem .4rem 0 rgba(236, 152, 152, 0.2);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--bg-color);
+    overflow-x: hidden;
+    padding-left: 12rem;
+}
+
+section {
+    padding: 2rem;
+}
+
+.heading {
+    text-align: center;
+    font-size: 4rem;
+    color: var(--black);
+    text-transform: uppercase;
+    padding-bottom: 2rem;
+}
+
+.heading span {
+    color: var(--wc-light-blue);
+    text-transform: uppercase;
+    padding-bottom: 2rem;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    background: var(--bg-color);
+    border-right: var(--border);
+    height: 100%;
+}

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-----font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>faculty</title>
+</head>
+
+<body>
+    <!-- header section starts  -->
+
+    <header class="header">
+
+        <nav>
+            <ul>
+                <li>
+                    <a href="#" class="logo">
+
+                        <i class="fas fa-school"></i>
+                        <span class="nav-iten">HarlloInstitute</span>
+                    </a>
+                </li>
+                <li (click)="display()">
+                    <a href="#" id="items">
+                        <i class="fas fa-university"></i>
+                        <span id="nav-item">School Faculty</span>
+                    </a>
+                </li>
+
+
+                <li *ngIf="toAppear">
+
+                    <a href="#" class="items" *ngFor="let seyi of MyFaculty" (click)="displaydept(seyi)">
+                        <i class="fas fa-chart-bar"></i>
+                        <span class="nav-item">{{seyi.name}}</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" class="logout">
+                        <i class="fas fa-sign-out-alt"></i>
+                        <span class="nav-item">Log out</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+
+    </header>
+
+
+
+    <!---home-section-start---->
+    <section id="main">
+        <div class="main-top">
+            <h1>Attendance</h1>
+            <i class="fas fa-user-cog"></i>
+        </div>
+
+    </section>
+    <!----home-section-ends-->
+
+    <!---card-section-starts---->
+    <section class="card" id="cards">
+        <div class="card-container">
+            <div class="box">
+                <img src="../assets/images/{{mydepartment.image}}" alt="">
+                <h4>{{mydepartment.name}}</h4>
+                <p>{{mydepartment.depart}}</p>
+                <div class="profile">
+                    <h3>profile</h3>
+                </div>
+            </div>
+            <!-- <div class="box">
+                <img src="../assets/images/Image here2.png" alt="">
+                <h4>omolara smith</h4>
+                <p>pure and applied chemistry</p>
+                <div class="profile" id="profile">
+                    <h3>profile</h3>
+                </div>
+            </div> -->
+            <!-- <div class="box">
+                <img src="../assets/images/Image here2 (1).png" alt="">
+                <h4>common wealth</h4>
+                <p>pure and applied physics</p>
+                <div class="profile" id="profile">
+                    <h3>profile</h3>
+                </div>
+            </div>
+            <div class="box">
+                <img src="../assets/images/Image here2.png" alt="" id="harllo">
+                <h4>Alugbin lola</h4>
+                <p>pure and applied biology</p>
+
+                <div class="profile" id="profile">
+                    <h3>profile</h3>
+                </div>
+            </div> -->
+        </div>
+    </section>
+    <!---attendance-section---->
+    <section class="attendance">
+        <div class="attendance-list">
+            <h1>Attendance List</h1>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Depart</th>
+                        <th>Date</th>
+                        <th>Join Time</th>
+                        <th>Logout Time</th>
+                        <th>Details</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let mydepart of deptAppear">
+                        <td>{{mydepart.id}}</td>
+                        <td>{{mydepart.name}}</td>
+                        <td>{{mydepart.depart}}</td>
+                        <td>{{mydepart.date}}</td>
+                        <td>{{mydepart['join-time']}}</td>
+                        <td>{{mydepart['logout-time']}}</td>
+                        <td><button (click)="displayProfile(mydepart)">View </button></td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+        </div>
+    </section>
+    <!----card--section--ends-->
+</body>
+
+</html>

@@ -38,7 +38,7 @@ export class FacultyListService {
               date:'04-19-22',
               'join-time':'8:00AM',
               'logout-time':'4:00',
-              image:"Image here2 (1).png"
+              image:"PORT.jpg"
             },
             {
               id : 4,
@@ -47,7 +47,7 @@ export class FacultyListService {
               date:'04-19-22',
               'join-time':'8:00AM',
               'logout-time':'4:00',
-              image:"Image here2.png"
+              image:"Image here2 (2).png"
             }
 
           ]
@@ -64,7 +64,7 @@ export class FacultyListService {
               date:'04-19-22',
               'join-time':'8:20AM',
               'logout-time':'4:00',
-              image:"Image here2 (1).png"
+              image:"IMG-20210530-WA0027.jpg"
             },
             {
               id : 2,
@@ -73,7 +73,7 @@ export class FacultyListService {
               date:'04-19-22',
               'join-time':'8:00AM',
               'logout-time':'4:00',
-              image:"Image here2 (1).png"
+              image:"Image here2 (2).png"
             },
             {
               id : 3,
@@ -91,7 +91,7 @@ export class FacultyListService {
               date:'04-19-22',
               'join-time':'9:00AM',
               'logout-time':'4:20',
-              image:"Image here2.png"
+              image:"IMG-20210610-WA0009.jpg"
             }
 
           ]
